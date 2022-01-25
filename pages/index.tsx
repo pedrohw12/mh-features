@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import Link from "next/link";
 import type { NextPage } from "next";
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
@@ -28,13 +28,14 @@ const Home: NextPage = () => {
         </p>
 
         <div className={styles.grid}>
+          {/* @ts-ignore */}
           <Link href="/suggest-feature" className={styles.card}>
             <h2>Suggest a new feature!</h2>
             <p>
               Suggest us a new feature that you think is a good idea for MH.
             </p>
           </Link>
-
+          {/* @ts-ignore */}
           <Link href="/feature-voting" className={styles.card}>
             <h2>Feature Voting</h2>
             <p>See the list of features and vote in the best ones!</p>

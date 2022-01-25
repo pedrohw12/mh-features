@@ -38,11 +38,13 @@ const FeatureVoting: NextPage = () => {
 
         <div className={styles.grid}>
           {features.map((feature) => (
+            // @ts-ignore
             <Link key={feature.id} href="/suggest-feature" className={styles.card}>
               <p>{feature.description}</p>
             </Link>
           ))}
         </div>
+        {/* @ts-ignore */}
         <Link href="/suggest-feature" className={styles.card}>
           <h2>Suggest a new feature!</h2>
           <p>Suggest us a new feature that you think is a good idea for MH.</p>

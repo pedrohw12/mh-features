@@ -16,6 +16,7 @@ const SuggestFeature: NextPage = () => {
         <p className={styles.description}>
           Write down your suggestion and submit it. In a few moments you will be
           able to see it{" "}
+          {/* @ts-ignore */}
           <Link className={styles.navigateAnchor} href="/feature-voting">
             here
           </Link>
@@ -32,6 +33,7 @@ const SuggestFeature: NextPage = () => {
         </form>
 
         <div className={styles.grid}>
+          {/* @ts-ignore */}
           <Link href="/feature-voting" className={styles.card}>
             <h2>Feature Voting</h2>
             <p>See the list of features and vote in the best ones!</p>
