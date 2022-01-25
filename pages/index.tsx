@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import type { NextPage } from "next";
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
@@ -14,7 +15,7 @@ const Home: NextPage = () => {
       <main className={styles.main}>
         <h1 className={styles.title}>
           Welcome to{" "}
-          <a href="https://nextjs.org">
+          <a href="https://mousehaunt.com">
             <br />
             Mouse Haunt Features!
           </a>
@@ -27,17 +28,17 @@ const Home: NextPage = () => {
         </p>
 
         <div className={styles.grid}>
-          <a href="/suggest-feature" className={styles.card}>
+          <Link href="/suggest-feature" className={styles.card}>
             <h2>Suggest a new feature!</h2>
             <p>
               Suggest us a new feature that you think is a good idea for MH.
             </p>
-          </a>
+          </Link>
 
-          <a href="/feature-voting" className={styles.card}>
+          <Link href="/feature-voting" className={styles.card}>
             <h2>Feature Voting</h2>
             <p>See the list of features and vote in the best ones!</p>
-          </a>
+          </Link>
         </div>
       </main>
 

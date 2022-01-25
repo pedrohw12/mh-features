@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import type { NextPage } from "next";
 import Head from "next/head";
 import styles from "../../styles/Suggest.module.css";
@@ -15,9 +16,9 @@ const SuggestFeature: NextPage = () => {
         <p className={styles.description}>
           Write down your suggestion and submit it. In a few moments you will be
           able to see it{" "}
-          <a className={styles.navigateAnchor} href="/feature-voting">
+          <Link className={styles.navigateAnchor} href="/feature-voting">
             here
-          </a>
+          </Link>
         </p>
 
         <form className={styles.form}>
@@ -31,10 +32,10 @@ const SuggestFeature: NextPage = () => {
         </form>
 
         <div className={styles.grid}>
-          <a href="/feature-voting" className={styles.card}>
+          <Link href="/feature-voting" className={styles.card}>
             <h2>Feature Voting</h2>
             <p>See the list of features and vote in the best ones!</p>
-          </a>
+          </Link>
         </div>
       </main>
 

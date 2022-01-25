@@ -1,7 +1,8 @@
+import Link from 'next/link'
 import { useEffect, useState } from "react";
 import type { NextPage } from "next";
 import Head from "next/head";
-import styles from "../../styles/Feature.module.css";
+import styles from '../../styles/Feature.module.css';
 import axios from "axios";
 
 type Feature = {
@@ -37,15 +38,15 @@ const FeatureVoting: NextPage = () => {
 
         <div className={styles.grid}>
           {features.map((feature) => (
-            <a key={feature.id} href="/suggest-feature" className={styles.card}>
+            <Link key={feature.id} href="/suggest-feature" className={styles.card}>
               <p>{feature.description}</p>
-            </a>
+            </Link>
           ))}
         </div>
-        <a href="/suggest-feature" className={styles.card}>
+        <Link href="/suggest-feature" className={styles.card}>
           <h2>Suggest a new feature!</h2>
           <p>Suggest us a new feature that you think is a good idea for MH.</p>
-        </a>
+        </Link>
       </main>
 
       <footer className={styles.footer}>
